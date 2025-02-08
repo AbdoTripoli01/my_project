@@ -22,7 +22,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     final name = _nameController.text;
     final age = _ageController.text;
     if (name.isNotEmpty && age.isNotEmpty) {
-      _streamController.add('مرحبًا $name😊! نتمنى أن تستفيد من هذه النصائح.');
+      _streamController.add('Hellow <$name😊!> I Hope You Benefit From The Tips');
       Future.delayed(Duration(seconds: 3), () {
         Navigator.push(
           context,
@@ -60,15 +60,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             children: [
               Center(
                 child: Text(
-                  '!😇مرحبًا بك يا صديقي',
-                  style: TextStyle(fontSize: 24),
+                  ' Welcome My Friend 😇!   ',
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
               SizedBox(height: 30),
               TextField(
                 controller: _nameController,
                 decoration: InputDecoration(
-                  labelText: 'أدخل اسمك',
+                  labelText: 'Enter Your Name ',
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -76,7 +76,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               TextField(
                 controller: _ageController,
                 decoration: InputDecoration(
-                  labelText: 'أدخل عمرك',
+                  labelText: ' Enter Your Age',
                   border: OutlineInputBorder(),
                 ),
                 keyboardType: TextInputType.number,
@@ -84,7 +84,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: _submitData,
-                child: Text('ابدأ'),
+                child: Text('Save'),
               ),
               SizedBox(height: 20),
               StreamBuilder<String>(

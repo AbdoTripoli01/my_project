@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Daily Motivation"),
+        title: Text("Tips Screen"),
         actions: [ //  زر الإعدادات في الأعلى على اليمين
           IconButton(
             icon: Icon(Icons.settings),

@@ -32,13 +32,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("الإعدادات")),
+      appBar: AppBar(title: Text("Settings")),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          textDirection: TextDirection.rtl,
+          textDirection: TextDirection.ltr,
           children: [
-            Text("تغيير الوضع "),
+            Text(" Change Mode "),
             Switch(
               value: _isDarkMode,
               onChanged: (value) {
